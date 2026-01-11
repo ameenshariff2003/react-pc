@@ -99,9 +99,9 @@ const Caard = () => {
     return (
 
         data.map((ice)=>(
-            <div className='h-[350px] w-[205px] rounded-[20px] bg-green-100'>
+            <div className='h-[350px] w-[205px] rounded-[20px] mb-[16px] bg-green-100'>
             <div className="top  ">
-                <img className='h-[45%] rounded-t-[20px] w-[100%]' src={ice.image} alt="dd" />
+                <img className='h-[170px] rounded-t-[20px] w-[100%]' src={ice.image} alt="dd" />
             </div>
             <div className="btm flex justify-start flex-col  ">
             <div className='h-div flex mb-[10px] justify-start flex-col'>
