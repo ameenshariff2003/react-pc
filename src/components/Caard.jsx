@@ -98,18 +98,18 @@ const Caard = () => {
 
     return (
 
-        data.map((ice)=>(
-            <div className='h-[350px] w-[205px] rounded-[20px] mb-[16px] bg-green-100'>
+        data.map((ice,key)=>(
+            <div key={key} className='h-[350px] w-[270px] rounded-[20px] mb-[16px] bg-green-100'>
             <div className="top  ">
-                <img className='h-[170px] rounded-t-[20px] w-[100%]' src={ice.image} alt="dd" />
+                <img className='h-[170px] rounded-t-[20px] w-[100%] object-cover' src={ice.image} alt="dd" />
             </div>
             <div className="btm flex justify-start flex-col  ">
             <div className='h-div flex mb-[10px] justify-start flex-col'>
                  <h1 className='font-bold '>{ice.title}</h1>
                  
                      <div className='type flex justify-around text-[11px] '>
-                     {ice.properties.map((p)=>(
-                    <span>{p}</span>
+                     {ice.properties.map((p,key)=>(
+                    <span key={key}>{p}</span>
                        ))}
                    
 
@@ -125,9 +125,9 @@ const Caard = () => {
 
                   
                         <div className='type flex justify-around text-[11px] '>
-                          {ice.varieties.map((v)=>(
+                          {ice.varieties.map((v,key)=>(
                   
-                    <button className="btn">{v}</button>
+                    <button key={key} className="btn">{v}</button>
                     ))}
 
                 </div>
