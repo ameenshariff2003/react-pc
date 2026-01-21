@@ -22,9 +22,10 @@ const Crud = () => {
     }
     const handelDlt = (key)=>{
         let copy = arr
+  const newArr = arr.filter((_, id) => id !== key)
 
-       setArr(copy.filter((_,id)=> id !== key))
-       localStorage.setItem("arr",JSON.stringify(arr))
+       setArr(newArr)
+       localStorage.setItem("arr",JSON.stringify(newArr))
        }
     
 
